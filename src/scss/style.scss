@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -33,7 +34,9 @@ body {
 	position: relative;
 }
 .header{
+	position: sticky;
 	padding: 20px 0 25px;
+	background-color: #E5E5E5;
 	.header-wrapper{
 		display: flex;
 		justify-content: space-between;
@@ -66,6 +69,10 @@ body {
 				outline: none;
 				display: inline-block;
 				margin: 0 0 0 20px;
+				background-color: #E5E5E5;
+				&:focus{
+					border-bottom: 1px solid #E64926;
+				}
 			}
 		}
 		.languages{
@@ -73,15 +80,14 @@ body {
 			display: flex;
 			li{
 				margin: 0 20px 0 0;
-				letter-spacing: 0.1em;
-				text-transform: uppercase;
-				color: #0F303F;
 				&:last-child{
 					margin: 0;
 				}
 				&:first-child{
-					color: #E64926;
 					position: relative;
+					a{
+						color: #E64926;
+					}
 					&::after{
 						content: " ";
 						width: 25px;
@@ -91,6 +97,12 @@ body {
 						bottom: -100%;
 						left: 0;
 					}
+				}
+				a{
+					letter-spacing: 0.1em;
+					text-transform: uppercase;
+					color: #0F303F;
+					text-decoration: none;
 				}
 			}
 		}
@@ -103,6 +115,109 @@ body {
 				&:last-child{
 					margin: 0;
 				}
+			}
+		}
+	}
+}
+.banner{
+		width: 100vw;
+		position: relative;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%);
+	.banner-item{
+		min-height: 650px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		padding: 150px 0 0 50px;
+		p{
+			font-family: 'Cormorant Garamond';
+			font-weight: 500;
+			text-transform: uppercase;
+			color: #0F303F;
+			font-size: 20px;
+		}
+		h2{
+			margin: 20px 0 0;
+			font-family: 'Cormorant Garamond';
+			font-weight: 500;
+			text-transform: uppercase;
+			color: #0F303F;
+			font-size: 40px;
+		}
+		a{
+			text-decoration: none;
+			color: #fff;
+			display: block;
+			margin: 35px 0 0;
+			text-transform: uppercase;
+			letter-spacing: 0.045em;
+			color: #E64926;
+			transition: all 0.1s linear;
+			&:hover{
+				color: #0F303F;
+				text-decoration: underline;
+			}
+		}
+	}
+	.slick-dots{
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		transform: translate(-50%);
+		list-style-type: none;
+		display: flex;
+		li{
+			margin: 0 50px 0 0;
+			&:last-child{
+				margin: 0;
+			}
+			button{
+				background-color: transparent;
+				border: none;
+				color: rgb(234, 233, 232, 0.3);
+				// opacity: 0.3;
+				font-size: 17px;
+				font-family: 'Tajawal';
+				letter-spacing: 0.1em;
+				cursor: pointer;
+			}
+		}
+		.slick-active button{
+			color: rgb(234, 233, 232, 1);
+		}
+	}
+	.banner-main{
+		padding: 180px 0 0;
+		text-align: center;
+		p{
+			font-family: 'Cormorant';
+			font-weight: 500;
+			text-transform: uppercase;
+			font-size: 20px;
+			color: #EAE9E8;
+		}
+		h1{
+			margin: 20px 0 0;
+			font-family: 'Cormorant';
+			font-weight: 500;
+			text-transform: uppercase;
+			font-size: 40px;
+			color: #EAE9E8;
+		}
+		a{
+			text-decoration: none;
+			color: #fff;
+			display: block;
+			margin: 35px 0 0;
+			text-transform: uppercase;
+			letter-spacing: 0.045em;
+			color: #EAE9E8;
+			transition: all 0.1s linear;
+			&:hover{
+				color: #0F303F;
+				text-decoration: underline;
 			}
 		}
 	}
