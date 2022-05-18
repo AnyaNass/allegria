@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 	<div class="page-holder">
 		<div class="wrapper">
@@ -75,17 +77,17 @@
 											</ul>
 										</div>
 									</div>
-										<ul class="women-menu-footer">
-											<li><a href="#">DEHA</a></li>
-											<li><a href="#">American vintage</a></li>
-											<li><a href="#">george gina lucy</a></li>
-											<li><a href="#">birkenstock</a></li>
-										</ul>
+									<ul class="women-menu-footer">
+										<li><a href="#">DEHA</a></li>
+										<li><a href="#">American vintage</a></li>
+										<li><a href="#">george gina lucy</a></li>
+										<li><a href="#">birkenstock</a></li>
+									</ul>
 								</div>
 							</li>
 							<li>Чоловіки</li>
 						</ul>
-						<form>
+						<form class="desktop-search">
 							<label for="header-search">Пошук</label>
 							<input type="search" id="header-search">
 						</form>
@@ -95,12 +97,12 @@
 						</ul>
 						<ul class="header-icons">
 							<li><a href="#">
-								<img src="img/header/client-icon.svg" alt="client">
-							</a></li>
+									<img src="img/header/client-icon.svg" alt="client">
+								</a></li>
 							<li><img src="img/header/like-icon.svg" alt="like"></li>
 							<li><a href="#">
-								<img src="img/header/bag-icon.svg" alt="bag">
-							</a></li>
+									<img src="img/header/bag-icon.svg" alt="bag">
+								</a></li>
 							<li>
 								<span class="nav-button"></span>
 								<nav class="nav-mobile tabs" id="tabs">
@@ -108,20 +110,76 @@
 										<li class="tab-header__item js-tab-trigger active" data-tab="1">Жінки</li>
 										<li class="tab-header__item js-tab-trigger" data-tab="2">Чоловіки</li>
 									</ul>
-									
 									<ul class="tab-content">
 										<li class="tab-content__item js-tab-content active" data-tab="1">
-											<ul class="mobile-menu-women">
-												<li><a href="#">Одяг</a></li>
-												<li><a href="#">Взуття</a></li>
+											<h3 class="accordion">Одяг</h3>
+											<ul class="panel">
+												<li><a href="#">Світшоти і худі</a></li>
+												<li><a href="#">Плаття, юбки</a></li>
+												<li><a href="#">Футболки і топи</a></li>
+												<li><a href="#">Брюки, шорти</a></li>
+												<li><a href="#">Сорочки</a></li>
+												<li><a href="#">Комбінезони</a></li>
+												<li><a href="#">Легінси</a></li>
+												<li><a href="#">Куртки</a></li>
+												<li><a href="#">Пальто</a></li>
+												<li><a href="#">Плащі</a></li>
+												<li><a href="#">Жилети</a></li>
+												<li><a href="#">Вітровки</a></li>
+											</ul>
+											<h3 class="accordion">Взуття</h3>
+											<ul class="panel">
+												<li><a href="#">Кросівки</a></li>
+												<li><a href="#">Шльопки</a></li>
+											</ul>
+											<h3 class="accordion">Сумки</h3>
+											<ul class="panel">
+												<li><a href="#">Сумки</a></li>
+												<li><a href="#">Рюкзаки</a></li>
+												<li><a href="#">Кросбоді</a></li>
+												<li><a href="#">Поясні</a></li>
+												<li><a href="#">Спортивні</a></li>
+												<li><a href="#">Шопери</a></li>
+											</ul>
+											<h3 class="accordion">Аксесуари</h3>
+											<ul class="panel">
+												<li><a href="#">Головні убори</a></li>
+												<li><a href="#">Рукавиці</a></li>
+												<li><a href="#">Шарфи та хустинки</a></li>
+												<li><a href="#">Носки</a></li>
+												<li><a href="#">Інше</a></li>
+											</ul>
+											<h3 class="accordion">Білизна</h3>
+											<ul class="panel">
+												<li><a href="#">Труси</a></li>
+												<li><a href="#">Топи</a></li>
+												<li><a href="#">Бюстгальтери</a></li>
 											</ul>
 										</li>
 										<li class="tab-content__item js-tab-content" data-tab="2">
-											<ul class="mobile-menu-men">
-												<li><a href="#">Білизна</a></li>
-												<li><a href="#">Сумки</a></li>
+											<h3 class="accordion">Взуття</h3>
+											<ul class="panel">
+												<li><a href="#">Кросівки</a></li>
+												<li><a href="#">Шльопки</a></li>
 											</ul>
-										</li>	
+										</li>
+									</ul>
+									<ul class="mobile-search-and-language">
+										<form class="mobile-search">
+											<label for="mobile-search">Пошук</label>
+											<input type="search" id="mobile-search">
+										</form>
+										<ul class="mobile-languages">
+											<li><a href="#">Ua</a></li>
+											<li><a href="#">En</a></li>
+										</ul>
+									</ul>
+									<ul class="mobile-menu-footer">
+										<li><a href="#">DEHA</a></li>
+										<li><a href="#">American vintage</a></li>
+										<li><a href="#">george gina lucy</a></li>
+										<li><a href="#">birkenstock</a></li>
+									</ul>
 								</nav>
 							</li>
 						</ul>
@@ -140,7 +198,7 @@
 							<p>Бренд</p>
 							<h2>george gina lucy
 								</h1>
-							<a href="#">Смотреть коллекцию</a>
+								<a href="#">Смотреть коллекцию</a>
 						</div>
 						<div class="banner-item" style="background-image: url(img/banner/third-banner.jpg);">
 							<p>Бренд</p>
@@ -158,7 +216,7 @@
 		</div>
 		<footer class="footer">
 			<div class="container">
-					
+
 			</div>
 		</footer>
 	</div>
@@ -167,4 +225,5 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 	<script src="./js/app.js"></script>
 </body>
+
 </html>
