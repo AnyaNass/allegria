@@ -17,8 +17,72 @@
 						<div class="logo">
 							<a href="#"><img src="img/header/logo.svg" alt="logo"></a>
 						</div>
-						<ul class="sex">
-							<li>Жінки</li>
+						<ul class="nav-desktop">
+							<li class="women">Жінки
+								<div class="women-menu">
+									<div class="women-menu-wrapper">
+										<div class="women-menu-item">
+											<h3>Одяг</h3>
+											<ul>
+												<li><a href="#">Світшоти і худі</a></li>
+												<li><a href="#">Плаття, юбки</a></li>
+												<li><a href="#">Футболки і топи</a></li>
+												<li><a href="#">Брюки, шорти</a></li>
+												<li><a href="#">Сорочки</a></li>
+												<li><a href="#">Комбінезони</a></li>
+												<li><a href="#">Легінси</a></li>
+												<li><a href="#">Куртки</a></li>
+												<li><a href="#">Пальто</a></li>
+												<li><a href="#">Плащі</a></li>
+												<li><a href="#">Жилети</a></li>
+												<li><a href="#">Вітровки</a></li>
+											</ul>
+										</div>
+										<div class="women-menu-item">
+											<h3>Взуття</h3>
+											<ul>
+												<li><a href="#">Кросівки</a></li>
+												<li><a href="#">Шльопки</a></li>
+											</ul>
+										</div>
+										<div class="women-menu-item">
+											<h3>Сумки</h3>
+											<ul>
+												<li><a href="#">Сумки</a></li>
+												<li><a href="#">Рюкзаки</a></li>
+												<li><a href="#">Кросбоді</a></li>
+												<li><a href="#">Поясні</a></li>
+												<li><a href="#">Спортивні</a></li>
+												<li><a href="#">Шопери</a></li>
+											</ul>
+										</div>
+										<div class="women-menu-item">
+											<h3>Аксесуари</h3>
+											<ul>
+												<li><a href="#">Головні убори</a></li>
+												<li><a href="#">Рукавиці</a></li>
+												<li><a href="#">Шарфи та хустинки</a></li>
+												<li><a href="#">Носки</a></li>
+												<li><a href="#">Інше</a></li>
+											</ul>
+										</div>
+										<div class="women-menu-item">
+											<h3>Білизна</h3>
+											<ul>
+												<li><a href="#">Труси</a></li>
+												<li><a href="#">Топи</a></li>
+												<li><a href="#">Бюстгальтери</a></li>
+											</ul>
+										</div>
+									</div>
+										<ul class="women-menu-footer">
+											<li><a href="#">DEHA</a></li>
+											<li><a href="#">American vintage</a></li>
+											<li><a href="#">george gina lucy</a></li>
+											<li><a href="#">birkenstock</a></li>
+										</ul>
+								</div>
+							</li>
 							<li>Чоловіки</li>
 						</ul>
 						<form>
@@ -37,6 +101,29 @@
 							<li><a href="#">
 								<img src="img/header/bag-icon.svg" alt="bag">
 							</a></li>
+							<li>
+								<span class="nav-button"></span>
+								<nav class="nav-mobile tabs" id="tabs">
+									<ul class="nav-mobile-sex tab-header">
+										<li class="tab-header__item js-tab-trigger active" data-tab="1">Жінки</li>
+										<li class="tab-header__item js-tab-trigger" data-tab="2">Чоловіки</li>
+									</ul>
+									
+									<ul class="tab-content">
+										<li class="tab-content__item js-tab-content active" data-tab="1">
+											<ul class="mobile-menu-women">
+												<li><a href="#">Одяг</a></li>
+												<li><a href="#">Взуття</a></li>
+											</ul>
+										</li>
+										<li class="tab-content__item js-tab-content" data-tab="2">
+											<ul class="mobile-menu-men">
+												<li><a href="#">Білизна</a></li>
+												<li><a href="#">Сумки</a></li>
+											</ul>
+										</li>	
+								</nav>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -44,7 +131,7 @@
 			<main class="main">
 				<div class="container">
 					<section class="banner">
-						<div class="banner-item banner-main" style="background-image: url(img/banner/first-banner.jpg);">
+						<div class="banner-item banner-main">
 							<p>Бренд</p>
 							<h1>american vintage</h1>
 							<a href="#">Смотреть коллекцию</a>
@@ -75,7 +162,7 @@
 			</div>
 		</footer>
 	</div>
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 	<script src="./js/app.js"></script>
