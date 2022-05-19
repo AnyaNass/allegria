@@ -289,23 +289,88 @@ body.lock {
 				&.active {
 					top: 100%;
 				}
-				.nav-mobile-sex{
+				.tablet-wrapper{
 					display: flex;
 					justify-content: center;
-					list-style-type: none;
 					padding: 50px 0 0;
-					.tab-header__item{
-						cursor: pointer;
-						font-size: 14px;
-						letter-spacing: 0.1em;
-						text-transform: uppercase;
-						color: #0F303F;
-						padding: 0 0 20px 0;
+					.nav-mobile-sex{
+						display: flex;
+						justify-content: center;
+						list-style-type: none;
+						.tab-header__item{
+							cursor: pointer;
+							font-size: 14px;
+							letter-spacing: 0.1em;
+							text-transform: uppercase;
+							color: #0F303F;
+							padding: 0 0 20px 0;
+						}
+						.active{
+							border-bottom: 2px solid #E64926;
+						}
 					}
-					.active{
-						border-bottom: 2px solid #E64926;
+					.mobile-search-and-language{
+						display: none;
+						@media (min-width:768px) {
+							display: flex;
+							margin: 0 0 0 35px;
+						}
+						.mobile-search{
+							display: block;
+							label{
+								letter-spacing: 0.1em;
+								text-transform: uppercase;
+								color: #0F303F;
+								font-size: 14px;
+							}
+							input[type=search]{
+								width: 200px;
+								margin: 0 10px;
+								border-bottom: 1px solid #0F303F;
+								border-left: none;
+								border-right: none;
+								border-top: none;
+								outline: none;
+								display: inline-block;
+								background-color: transparent;
+								&:focus{
+									border-bottom: 1px solid #E64926;
+								}
+							}
+						}
+						.mobile-languages{
+							list-style-type: none;
+							display: flex;
+							justify-content: space-between;
+							margin: 0 0 0 35px;
+							li{
+								&:first-child{
+									position: relative;
+									a{
+										color: #E64926;
+									}
+									&::after{
+										content: " ";
+										width: 25px;
+										height: 2px;
+										background-color: #E64926;
+										position: absolute;
+										bottom: 0%;
+										left: 0;
+									}
+								}
+								a{
+									letter-spacing: 0.1em;
+									text-transform: uppercase;
+									color: #0F303F;
+									text-decoration: none;
+									font-size: 14px;
+								}
+							}
+						}
 					}
 				}
+				
 				.mobile-menu-content-wrapper{
 					display: flex;
 					flex-direction: column;
@@ -383,6 +448,10 @@ body.lock {
 						margin: 50px 0 0;
 						.mobile-search-and-language{
 							display: flex;
+							justify-content: center;
+							@media (min-width:768px) {
+								display: none;
+							}
 							.mobile-search{
 								display: block;
 								label{
@@ -450,6 +519,9 @@ body.lock {
 									letter-spacing: 0.1em;
 									text-transform: uppercase;
 									color: #254A5A;
+									@media (min-width:768px) {
+										font-size: 12px;
+									}
 								}
 							}
 						}
