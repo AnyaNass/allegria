@@ -42,8 +42,8 @@ for (i = 0; i < acc.length; i++)
 		}
 	});
 
-// $(document).ready(function () {
-// 	$(".accordion").click(function (event) {
-// 		$(".accordion-icon").toggleClass("active");
-// 	});
-// });
+	$(document).ready(function () {
+		$("#slick-slide-control02").click(function (event) {
+			$("#slick-slide-control00, #slick-slide-control01, #slick-slide-control02, #slick-slide-control03").toggleClass("active");
+		});
+	});
