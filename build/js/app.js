@@ -42,8 +42,34 @@ for (i = 0; i < acc.length; i++)
 		}
 	});
 
-	$(document).ready(function () {
-		$("#slick-slide-control02").click(function (event) {
-			$("#slick-slide-control00, #slick-slide-control01, #slick-slide-control02, #slick-slide-control03").toggleClass("active");
-		});
+$(document).ready(function () {
+	$("#slick-slide-control02").click(function (event) {
+		$("#slick-slide-control00, #slick-slide-control01, #slick-slide-control02, #slick-slide-control03").toggleClass("active");
 	});
+});
+
+$('.popular-slider').slick({
+	mobileFirst: true,
+	dots: false,
+	infinite: true,
+	speed: 300,
+	slidesToShow: 2,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 1440,
+			settings: {
+				slidesToShow: 4,
+			}
+		},
+		// You can unslick at a given breakpoint now by adding:
+		// settings: "unslick"
+		// instead of a settings object
+	]
+});
