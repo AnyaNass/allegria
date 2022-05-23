@@ -55,6 +55,7 @@ $('.popular-slider').slick({
 	speed: 300,
 	slidesToShow: 2,
 	slidesToScroll: 1,
+	variableWidth: true,
 	responsive: [
 		{
 			breakpoint: 768,
@@ -63,7 +64,7 @@ $('.popular-slider').slick({
 			}
 		},
 		{
-			breakpoint: 1440,
+			breakpoint: 1200,
 			settings: {
 				slidesToShow: 4,
 			}
