@@ -120,7 +120,7 @@ body.lock {
 											border-radius: 100%;
 											position: absolute;
 											left: -1%;
-											top: 50%;
+											top: 40%;
 										}
 									}
 									a{
@@ -129,8 +129,9 @@ body.lock {
 										color: #0F303F;
 										text-decoration: none;
 										text-transform: none;
-										display: inline-block;
+										display: block;
 										transition: all 0.1s linear;
+										position: relative;
 										&:hover{
 											color: #E64926;
 											transform: translateX(10px);
@@ -791,6 +792,7 @@ body.lock {
 .popular{
 	padding: 70px 0 115px;
 	text-align: center;
+	position: relative;
 	&::before{
 		content: url('../img/popular/popular-logo.svg');
 		position: absolute;
@@ -801,7 +803,7 @@ body.lock {
 		background-color: #fff;
 		padding: 0 20px;
 		@media (min-width:1440px) {
-			bottom: 3%;
+			bottom: 8%;
 			padding: 0 25px;
 		}
 	}
@@ -816,14 +818,14 @@ body.lock {
 		transform: translate(-50%);
 		z-index: 5;
 		@media (min-width:1440px) {
-			bottom: 3.3%;
+			bottom: 9%;
 		}
 	}
 	@media (min-width:768px) {
 		padding: 100px 0 110px ;
 	}
 	@media (min-width:1440px) {
-		padding: 120px 100px 190px;
+		padding: 120px 100px 200px;
 	}
 	h5{
 		font-family: 'Cormorant';
@@ -1046,4 +1048,78 @@ body.lock {
 			}
 		}
 	}
+}
+.about-us{
+	padding: 45px 140px 0;
+	position: relative;
+	&::before{
+		content: ' ';
+		background-color: #254A5A;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%);
+		width: 100vw;
+		z-index: -5;
+	}
+	&::after{
+		content: ' ';
+		width: 123px;
+		height: 116px;
+		background-color: transparent;
+		border: 1px solid #fff;
+		border-radius: 50%;
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		border-right-color: transparent;
+		transform: rotate(60deg);
+		left: 50%;
+	}
+	.about-us-content{
+		display: flex;
+		justify-content: space-between;
+		.about-us-content-info{
+			padding: 85px 0 0;
+			margin: 0 75px 0 0;
+			h4{
+				font-family: 'Cormorant Garamond';
+				font-weight: 400;
+				font-size: 90px;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: #EAE9E8;
+				line-height: 0.7em;
+				position: relative;
+				&::first-letter{
+					font-size: 30px;
+				}
+				&::after{
+					content: " ";
+					width: 318px;
+					height: 1px;
+					background-color: #fff;
+					position: absolute;
+					z-index: 5;
+					transform: rotate(-60deg);
+					left: 80%;
+					bottom: 120%;
+				}
+			}
+			p{
+				margin: 20px 0 0;
+				font-family: 'Avenir';
+				font-size: 14px;
+				color: #FFFFFF;
+				line-height: 1.7em;
+			}
+		}
+	}
+
+}
+.footer{
+	margin: -87px 0 0;
+	background-color: #fff;
+	padding: 190px 0 0;
 }
