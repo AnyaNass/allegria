@@ -1053,7 +1053,7 @@ body.lock {
 	padding: 70px 0 70px 35px;
 	position: relative;
 	@media (min-width:768px) {
-					
+		padding: 140px 0 129px;	
 	}
 	@media (min-width:1440px) {
 		padding: 45px 140px 0;
@@ -1095,7 +1095,8 @@ body.lock {
 		.about-us-content-info{
 			
 			@media (min-width:768px) {
-					
+				max-width: 500px;
+				margin: 0 auto;
 			}
 			@media (min-width:1440px) {
 				padding: 85px 0 0;
@@ -1125,9 +1126,6 @@ body.lock {
 					bottom: 120%;
 				}
 				@media (min-width:768px) {
-					
-				}
-				@media (min-width:1440px) {
 					font-size: 90px;
 				}
 			}
@@ -1142,24 +1140,37 @@ body.lock {
 		.about-us-content-image{
 			display: none;
 			@media (min-width:768px) {
-				display: block;	
+				display: block;
+				text-align: right;
+				margin: 50px 70px 0 0;
 			}
 			@media (min-width:1440px) {
-				
+				margin: 0;
+			}
+			img{
+				@media (min-width:768px) {
+				width: 226px;
+				height: 258px;
+				}
+				@media (min-width:1440px) {
+					width: 474px;
+					height: 543px;
+				}
 			}
 		}
 	}
 
 }
 .footer{
-	// margin: -87px 0 0;
 	background-color: #fff;
 	padding: 125px 0 0;
 	@media (min-width:768px) {
-		
+		margin: -300px 0 0;
+		padding: 179px 0 0;
 	}
 	@media (min-width:1440px) {
 		margin: -87px 0 0;
+		padding: 125px 0 0;
 	}
 	.footer-top{
 		text-align: center;
@@ -1175,6 +1186,10 @@ body.lock {
 			left: 50%;
 			transform: translate(-50%);
 			z-index: 5;
+			display: none;
+			@media (min-width:1440px) {
+				display: block;
+			}
 		}
 		.footer-title{
 			font-family: 'Cormorant Garamond';
