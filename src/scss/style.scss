@@ -1070,24 +1070,33 @@ body.lock {
 		z-index: -5;
 	}
 	&::after{
-		content: ' ';
-		width: 123px;
-		height: 116px;
-		background-color: transparent;
-		border: 1px solid #fff;
-		border-radius: 50%;
+		content: url('../img/about-us/about-us-decorate.png');
 		position: absolute;
-		z-index: -1;
-		top: 0;
-		border-right-color: transparent;
-		transform: rotate(60deg);
-		left: 50%;
+		z-index: 5;
+		top: -5%;
+		right: 5%;
+		@media (min-width:768px) {
+			top: -1%;
+			right: 20%;	
+		}
+		@media (min-width:1440px) {
+			content: ' ';
+			width: 123px;
+			height: 116px;
+			background-color: transparent;
+			border: 1px solid #fff;
+			border-radius: 50%;
+			position: absolute;
+			z-index: -1;
+			top: -1%;
+			border-right-color: transparent;
+			transform: rotate(80deg);
+			left: 54%;
+		}
+
 	}
 	.about-us-content{
-		
-		@media (min-width:768px) {
-					
-		}
+	
 		@media (min-width:1440px) {
 			display: flex;
 			justify-content: space-between;
@@ -1120,10 +1129,14 @@ body.lock {
 					height: 1px;
 					background-color: #fff;
 					position: absolute;
-					z-index: 5;
+					z-index: -1;
 					transform: rotate(-60deg);
-					left: 80%;
+					left: 100%;
 					bottom: 120%;
+					display: none;
+					@media (min-width:1440px) {
+						display: block;
+					}
 				}
 				@media (min-width:768px) {
 					font-size: 90px;
@@ -1144,6 +1157,9 @@ body.lock {
 				text-align: right;
 				margin: 50px 70px 0 0;
 			}
+			@media (min-width:1200px) {
+				margin: 50px 150px 0 0;
+			}
 			@media (min-width:1440px) {
 				margin: 0;
 			}
@@ -1163,10 +1179,10 @@ body.lock {
 }
 .footer{
 	background-color: #fff;
-	padding: 125px 0 0;
+	padding: 70px 0 0;
 	@media (min-width:768px) {
 		margin: -300px 0 0;
-		padding: 179px 0 0;
+		padding: 239px 0 0;
 	}
 	@media (min-width:1440px) {
 		margin: -87px 0 0;
@@ -1174,7 +1190,6 @@ body.lock {
 	}
 	.footer-top{
 		text-align: center;
-		padding: 65px 0 0;
 		position: relative;
 		&::before{
 			content: " ";
@@ -1191,16 +1206,25 @@ body.lock {
 				display: block;
 			}
 		}
+		@media (min-width:1440px) {
+			padding: 65px 0 0;
+		}
 		.footer-title{
 			font-family: 'Cormorant Garamond';
 			font-weight: 600;
-			font-size: 30px;
+			font-size: 20px;
 			letter-spacing: 0.2em;
 			text-transform: uppercase;
 			color: #0F303F;
+			@media (min-width:1440px) {
+				font-size: 30px;
+			}
 		}
 		.footer-form{
-			margin: 20px 0 0;
+			margin: 30px 0 0;
+			@media (min-width:1440px) {
+				margin: 20px 0 0;
+			}
 			input[type=email]{
 				border-top: none;
 				border-right: none;
@@ -1248,8 +1272,9 @@ body.lock {
 					text-decoration: none;
 					color: #B7C1C5;
 					transition: all 0.1s linear;
+					font-size: 14px;
 					@media (min-width:768px) {
-					
+						font-size: 16px;
 					}
 					@media (min-width:1440px) {
 						&:hover{
@@ -1281,8 +1306,11 @@ body.lock {
 			padding: 15px 0;
 			li{
 				font-family: 'Jost';
-				font-size: 12px;
+				font-size: 8px;
 				color: #0F303F;
+				@media (min-width:768px) {
+					font-size: 12px;
+				}
 			}
 		}
 	}
