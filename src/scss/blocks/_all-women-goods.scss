@@ -1,0 +1,101 @@
+.all-women-goods-wrapper{
+	display: flex;
+	.all-women-goods-menu{
+		width: 220px;
+		.all-women-goods-menu-list{
+				margin: 25px 0 0;
+				display: flex;
+				list-style-type: none;
+				.tab-header__item{
+					cursor: pointer;
+					font-size: 14px;
+					letter-spacing: 0.1em;
+					text-transform: uppercase;
+					color: #0F303F;
+					padding: 0 0 20px 0;
+					margin: 0 25px 0 0;
+				}
+				.active{
+					border-bottom: 2px solid #E64926;
+				}
+			}	
+		
+		.all-women-goods-content-wrapper{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 85%;
+			.tab-content{
+				.tab-content__item {
+					display: none;
+					text-align: center;
+					margin: 0;
+					.accordion{
+						font-weight: 800;
+						font-size: 14px;
+						color: #0F303F;
+						text-transform: uppercase;
+						margin: 50px 0 0;
+						position: relative;
+						display: inline-block;
+						&:after{
+							content: " ";
+							height: 1px;
+							width: 10px;
+							background-color: #0F303F;
+							position: absolute;
+							top: 50%;
+							left: 115%;
+							transition: all 0.3s linear;
+						}
+						&::before{
+							content: " ";
+							height: 1px;
+							width: 10px;
+							background-color: #0F303F;
+							position: absolute;
+							top: 50%;
+							left: 115%;
+							transform: rotate(90deg);
+							transition: all 0.3s linear;
+						}
+						&.active:before{
+							transform: rotate(180deg);
+							background-color: #E64926;
+							transition: all 0.3s linear;
+						}
+						&.active::after{
+							background-color: #E64926;
+							transition: all 0.3s linear;
+						}
+					}
+					.panel{
+						max-height: 0;
+						overflow: hidden;
+						 transition: max-height 0.2s ease-out;
+						transform: translateY(25px);
+						list-style-type: none;
+						li{
+							margin: 10px 0 0;
+							&:first-child{
+								margin: 0;
+							}
+							a{
+								text-decoration: none;
+								color: #0F303F;
+								font-size: 14px;
+							}
+						}
+		
+					}
+				}
+				.tab-content__item.active {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+
+	

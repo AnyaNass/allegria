@@ -70,3 +70,4 @@ $('.popular-slider').slick({
 		},
 	]
 });
+
