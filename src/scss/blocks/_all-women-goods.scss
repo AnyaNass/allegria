@@ -1,10 +1,11 @@
 .all-women-goods-wrapper{
 	display: flex;
+	margin: 25px 0 0;
 	.all-women-goods-menu{
 		width: 220px;
 		.all-women-goods-menu-list{
-				margin: 25px 0 0;
 				display: flex;
+				justify-content: space-around;
 				list-style-type: none;
 				.tab-header__item{
 					cursor: pointer;
@@ -28,16 +29,20 @@
 			.tab-content{
 				.tab-content__item {
 					display: none;
-					text-align: center;
+					text-align: left;
 					margin: 0;
+					&.active {
+						display: block;
+					}
 					.accordion{
 						font-weight: 800;
 						font-size: 14px;
 						color: #0F303F;
 						text-transform: uppercase;
-						margin: 50px 0 0;
+						margin: 30px 0 0;
 						position: relative;
-						display: inline-block;
+						display: block;
+						cursor: pointer;
 						&:after{
 							content: " ";
 							height: 1px;
@@ -45,7 +50,7 @@
 							background-color: #0F303F;
 							position: absolute;
 							top: 50%;
-							left: 115%;
+							left: 95%;
 							transition: all 0.3s linear;
 						}
 						&::before{
@@ -55,7 +60,7 @@
 							background-color: #0F303F;
 							position: absolute;
 							top: 50%;
-							left: 115%;
+							left: 95%;
 							transform: rotate(90deg);
 							transition: all 0.3s linear;
 						}
@@ -86,14 +91,20 @@
 								font-size: 14px;
 							}
 						}
-		
 					}
-				}
-				.tab-content__item.active {
-					display: block;
 				}
 			}
 		}
+	}
+}
+
+.goods{
+	margin: 0 0 0 30px;
+	h1{
+		font-weight: 500;
+		font-size: 25px;
+		text-transform: uppercase;
+		color: #0F303F;
 	}
 }
 
