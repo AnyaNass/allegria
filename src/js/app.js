@@ -70,3 +70,30 @@ $('.popular-slider').slick({
 	]
 });
 
+$(document).ready(function () {
+	$(".filter-size").click(function (event) {
+		$(".filter-size, .filter-size-options").toggleClass("active");
+
+	});
+});
+
+$(document).ready(function () {
+	$(".filter-price").click(function (event) {
+		$(".filter-price, .filter-price-options").toggleClass("active");
+
+	});
+});
+
+$(document).ready(function () {
+	$(".filter-color").click(function (event) {
+		$(".filter-color, .filter-color-options").toggleClass("active");
+
+	});
+});
+
+$(document).ready(function () {
+	$(".filter-brand").click(function (event) {
+		$(".filter-brand, .filter-brand-options").toggleClass("active");
+
+	});
+});
