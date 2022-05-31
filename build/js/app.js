@@ -30,7 +30,6 @@ $('.js-tab-trigger').click(function () {
 //mobile menu accordeon
 var acc = document.getElementsByClassName("accordion");
 var i;
-
 for (i = 0; i < acc.length; i++)
 	acc[i].addEventListener("click", function () {
 		this.classList.toggle("active");
@@ -70,3 +69,32 @@ $('.popular-slider').slick({
 		},
 	]
 });
+
+$(document).ready(function () {
+	$(".filter-size").click(function (event) {
+		$(".filter-size, .filter-size-options").toggleClass("active");
+
+	});
+});
+
+$(document).ready(function () {
+	$(".filter-price").click(function (event) {
+		$(".filter-price, .filter-price-options").toggleClass("active");
+
+	});
+});
+
+$(document).ready(function () {
+	$(".filter-color").click(function (event) {
+		$(".filter-color, .filter-color-options").toggleClass("active");
+
+	});
+});
+
+$(document).ready(function () {
+	$(".filter-brand").click(function (event) {
+		$(".filter-brand, .filter-brand-options").toggleClass("active");
+
+	});
+});
+
