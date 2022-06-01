@@ -103,3 +103,11 @@ $(document).ready(function () {
 		$(".goods-list-hidden, .more-goods").toggleClass("active");
 	});
 });
+
+//Script for filters mobile
+$(document).ready(function () {
+	$(".filters-button").click(function (event) {
+		$(".filters-mobile-menu").toggleClass("active");
+		$("body").toggleClass("lock");
+	});
+});
