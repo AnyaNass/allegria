@@ -98,3 +98,8 @@ $(document).ready(function () {
 	});
 });
 
+$(document).ready(function () {
+	$(".more-goods").click(function (event) {
+		$(".goods-list-hidden, .more-goods").toggleClass("active");
+	});
+});
