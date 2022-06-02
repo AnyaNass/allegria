@@ -280,7 +280,7 @@
 								<div class="filters-mobile">
 									<button class="filters-mobile-button filters-button">Фільтри</button>
 									<div class="filters-mobile-menu">
-										<h2>Фільтри <span class="filters-close filters-button"></span></h2>
+										<h2 class="filters-and-sort-mobile-title">Фільтри <span class="filters-close filters-button"></span></h2>
 										<ul class="filters-mobile-menu-list tab-header">
 											<li class="tab-header__item js-tab-trigger active" data-tab="1">Жінки</li>
 											<li class="tab-header__item js-tab-trigger" data-tab="2">Чоловіки</li>
@@ -335,9 +335,36 @@
 													</ul>
 													</ul>
 													<h3 class="accordion accordion-main ">Розмір<span class="accordion-icon"></span></h3>
-													<ul class="panel panel-main">
-														
-													</ul>
+													<div class="panel panel-main">
+														<form class="filter-options filter-size-options">
+															<ul class="filter-size-options-mobile">
+																<li>
+																	<input type="checkbox" id="xs">
+																	<label for="xs">XS</label>
+																</li>
+																<li>
+																	<input type="checkbox" id="s">
+																	<label for="s">S</label>
+																</li>
+																<li>
+																	<input type="checkbox" id="m">
+																	<label for="m">m</label>
+																</li>
+																<li>
+																	<input type="checkbox" id="l">
+																	<label for="l">l</label>
+																</li>
+																<li>
+																	<input type="checkbox" id="xl">
+																	<label for="xl">Xl</label>
+																</li>
+																<li><input type="checkbox" id="xxl">
+																	<label for="xxl">2XL</label>
+																</li>
+															</ul>
+															<button class="filter-apply-button">Застосувати</button>
+														</form>
+													</div>
 													<h3 class="accordion accordion-main ">Ціна<span class="accordion-icon"></span></h3>
 													<ul class="panel panel-main">
 														
@@ -363,7 +390,26 @@
 									</div>
 								</div>
 								<div class="sort-mobile">
-									<button class="sort-mobile-button">Сортувати</button>
+									<button class="sort-mobile-button sort-button">Сортувати</button>
+									<div class="sort-mobile-menu">
+										<h2 class="filters-and-sort-mobile-title">Сортувати <span class="filters-close sort-button"></span></h2>
+											<form class="sort-mobile-menu-options">
+												<ul>
+													<li>
+														<input type="radio" id="novelties" name="sort">
+														<label for="novelties">Новинки</label>
+													</li>
+													<li>
+														<input type="radio" id="price-up" name="sort">
+														<label for="price-up">За зростанням ціни</label>
+													</li>
+													<li>
+														<input type="radio" id="price-down" name="sort">
+														<label for="price-down">За зниженням ціни</label>
+													</li>
+												</ul>
+											</form>
+									</div>
 								</div>
 							</div>
 

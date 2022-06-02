@@ -111,3 +111,11 @@ $(document).ready(function () {
 		$("body").toggleClass("lock");
 	});
 });
+
+$(document).ready(function () {
+	$(".sort-button").click(function (event) {
+		$(".sort-mobile-menu").toggleClass("active");
+		$("body").toggleClass("lock");
+	});
+});
+
