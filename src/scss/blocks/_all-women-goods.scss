@@ -28,6 +28,7 @@
 		a {
 			color: #0F303F;
 			text-decoration: none;
+			transition: all 0.1s linear;
 
 			@media (min-width:1440px) {
 				&:hover {
@@ -67,6 +68,7 @@
 				color: #0F303F;
 				padding: 0 0 20px 0;
 				margin: 0 25px 0 0;
+				transition: all 0.1s linear;
 			}
 
 			.active {
@@ -302,9 +304,7 @@
 				background-color: #fff;
 				width: 100vw;
 				right: 0;
-				// left: 0;
 				padding: 0 15px;
-				transition: all 0.5s linear;
 				height: 550px;
 				overflow-y: auto;
 				@media (min-width:768px) {
@@ -315,6 +315,7 @@
 					padding: 0 40px;
 				}
 				&.active {
+					transition: all 0.3s linear;
 					top: 0%;
 					@media (min-width:768px) {
 						right: 0%;
@@ -339,6 +340,7 @@
 						padding: 0 0 20px 0;
 						margin: 0 25px 0 0;
 						width: 160px;
+						transition: all 0.1s linear;
 					}
 
 					.active {
@@ -365,8 +367,7 @@
 								font-weight: 600;
 								font-size: 14px;
 								color: #0F303F;
-								margin: 15px 0 0;
-								overflow: auto;
+								margin: 10px 0 0;
 
 								&:first-child {
 									margin: 0;
@@ -477,6 +478,7 @@
 											top: 0;
 											bottom: 0;
 											left: 0;
+											transition: all 0.1s linear;
 										}
 					
 										input[type=checkbox] {
@@ -490,7 +492,7 @@
 								}
 							}
 							.filter-apply-button {
-								margin: 10px 0 0;
+								margin: 5px 0 0;
 								width: 100%;
 								padding: 10px 0;
 								font-size: 12px;
@@ -498,6 +500,7 @@
 								color: #EAE9E8;
 								background-color: #0F303F;
 								border: none;
+								transition: all 0.1s linear
 							}
 						}
 					}
@@ -515,7 +518,7 @@
 					right: 0;
 					left: 0;
 					padding: 0 15px;
-					transition: all 0.5s linear;
+					transition: all 0.3s linear;
 					height: 295px;
 					overflow: auto;
 	
@@ -537,6 +540,7 @@
 								appearance: none;
 								&:checked+label{
 									color: #E64926;
+									transition: all 0.1s linear;
 									&:before{
 										content: " ";
 										height: 5px;
@@ -876,10 +880,4 @@
 	&.active {
 		display: flex;
 	}
-}
-
-
-.footer {
-	padding: 0;
-	margin: 50px 0 0;
 }

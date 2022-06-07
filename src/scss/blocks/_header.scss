@@ -1,6 +1,9 @@
 .header{
 	position: relative;
+	position: fixed;
+	width: 100vw;
 	padding: 20px 0;
+	z-index: 15;
 	background-color: #E5E5E5;
 	@media (min-width:1440px) {
 		padding: 20px 0 0;

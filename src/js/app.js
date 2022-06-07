@@ -41,12 +41,14 @@ for (i = 0; i < acc.length; i++)
 		}
 	});
 
+//banner dots
 $(document).ready(function () {
 	$("#slick-slide-control02").click(function (event) {
 		$("#slick-slide-control00, #slick-slide-control01, #slick-slide-control02, #slick-slide-control03").toggleClass("active");
 	});
 });
 
+//main page slider
 $('.popular-slider').slick({
 	mobileFirst: true,
 	dots: false,
@@ -70,6 +72,8 @@ $('.popular-slider').slick({
 	]
 });
 
+
+//all women goods page filters
 $(document).ready(function () {
 	$(".filter-size").click(function (event) {
 		$(".filter-size, .filter-size-options").toggleClass("active");
@@ -98,6 +102,7 @@ $(document).ready(function () {
 	});
 });
 
+//all women goods page button "more goods"
 $(document).ready(function () {
 	$(".more-goods").click(function (event) {
 		$(".goods-list-hidden, .more-goods").toggleClass("active");
@@ -119,3 +124,33 @@ $(document).ready(function () {
 	});
 });
 
+
+//goods card page, similar goods slider
+$('.similar-goods-slider').slick({
+	mobileFirst: true,
+	dots: false,
+	infinite: true,
+	speed: 300,
+	slidesToShow: 2,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+	]
+});
+
+$(document).ready(function () {
+	$("#paymentAndDelivery, .modal-payment-and-delivery-cloce-btn").click(function (event) {
+		$(".modal-payment-and-delivery").toggleClass("active");
+	});
+});
+
+$(document).ready(function () {
+	$("#returnAndExchange, .modal-return-and-exchange-cloce-btn").click(function (event) {
+		$(".modal-return-and-exchange").toggleClass("active");
+	});
+});

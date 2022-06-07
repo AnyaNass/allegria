@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Товар</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<div class="page-holder">
+		<div class="wrapper">
+			@@include("../src/header.html")
+			</header>
+			<main class="main">
+				<div class="container">
+					<ul class="breadcrumb">
+						<li><a href="index.html">Головна</a></li>
+						<li><a href="#">Жінки</a></li>
+						<li><a href="#">Одяг</a></li>
+						<li><a href="#">Кофти і піджаки</a></li>
+						<li>American vintage</li>
+					</ul>
+					<section class="good-card-page-wrapper">
+						<div class="good-card">
+							<div class="good-images-wrapper-desktop">
+								<div class="card-gallery">
+									<div class="card-gallery-image">
+										<img src="img/good-card/popular-img-1.jpg" alt="image" onclick="openImg(this);">
+									</div>
+									<div class="card-gallery-image">
+										<img src="img/good-card/popular-img-2.jpg" alt="image" onclick="openImg(this);">
+									</div>
+									<div class="card-gallery-image">
+										<img src="img/good-card/popular-img-3.jpg" alt="image" onclick="openImg(this);">
+									</div>
+									<div class="card-gallery-image">
+										<img src="img/good-card/popular-img-4.jpg" alt="image" onclick="openImg(this);">
+									</div>
+									<div class="main-image">
+										<img id="expandedImg" style="width: 100%;">
+									</div>
+								</div>
+							</div>
+							<div class="good-card-info">
+								<div class="good-card-info-main">
+									<h2 class="good-card-info-title">American vintage</h2>
+									<p class="good-card-info-subtitle">Classic shirt</p>
+									<p class="good-card-info-price">3800 UAH</p>
+								</div>
+								<div class="good-card-info-size-list">
+									<p class="good-card-info-size-list-title">Розмір</p>
+									<form class="good-card-info-size-list-form">
+										<ul>
+											<li>
+												<input type="checkbox" id="xs">
+												<label for="xs">XS</label>
+											</li>
+											<li>
+												<input type="checkbox" id="s">
+												<label for="s">S</label>
+											</li>
+											<li>
+												<input type="checkbox" id="m">
+												<label for="m">m</label>
+											</li>
+											<li>
+												<input type="checkbox" id="l">
+												<label for="l">l</label>
+											</li>
+											<li>
+												<input type="checkbox" id="xl">
+												<label for="xl">Xl</label>
+											</li>
+											<li><input type="checkbox" id="xxl">
+												<label for="xxl">2XL</label>
+											</li>
+										</ul>
+									</form>
+									<div class="good-card-info-table-size-link">
+										<a href="#">Таблиця розмірів</a>
+									</div>
+								</div>
+								<div class="good-card-info-color-list">
+									<p class="good-card-info-color-list-title">Колір</p>
+									<form class="good-card-info-color-list-form">
+										<ul>
+											<li>
+												<input type="checkbox" id="white" class="checkbox-color">
+												<label for="white" class="white"></label>
+											</li>
+											<li>
+												<input type="checkbox" id="red" class="checkbox-color">
+												<label for="red" class="red"></label>
+											</li>
+											<li>
+												<input type="checkbox" id="blue" class="checkbox-color">
+												<label for="blue" class="blue"></label>
+											</li>
+											<li>
+												<input type="checkbox" id="black" class="checkbox-color">
+												<label for="black" class="black"></label>
+											</li>
+										</ul>
+									</form>
+								</div>
+								<div class="good-card-info-buttons">
+									<button class="good-card-info-buttons-add">Додати до кошику</button>
+									<button class="good-card-info-buttons-buy-now">Купити в один клік</button>
+								</div>
+								<div class="good-card-info-modal-buttons">
+									<button class="good-card-info-modal-buttons-payment-and-delivery" id="paymentAndDelivery">Оплата та доставка</button>
+									<div class="modal-payment-and-delivery">
+										<div class="good-card-info-modal-wrapper">
+											<button class="modal-cloce-btn modal-payment-and-delivery-cloce-btn"><span></span></button>
+											<h3 class="good-card-info-modal-title">Оплата</h3>
+											<h4 class="good-card-info-modal-subtitle">Готівкою при отприманні</h4>
+											<p class="good-card-info-modal-text">
+												Оплата осуществляется наличными денежными средствами курьеру непосредственно при
+												доставке заказа на адрес получателя. Выбрав данный способ оплаты, Вы получаете
+												возможность рассмотреть и примерить заказанный товар.
+											</p>
+											<p class="good-card-info-modal-text">
+												Если какая-то позиция Вам не подошла, Вы можете просто вернуть ее курьеру, не
+												оплачивая.
+											</p>
+											<h4 class="good-card-info-modal-subtitle">Карткою на сайті (Visa, Mastercard)
+											</h4>
+											<p class="good-card-info-modal-text">
+												На сайте нашего интернет-магазина мы принимаем оплату платежными картами Visa и
+												Mastercard. Безопасность проведения платежей у нас гарантирована системой
+												eCommerceConnect с использованием современного стандарта «3-D Secure».
+											</p>
+											<h3 class="good-card-info-modal-title">Доставка</h3>
+											<h4 class="good-card-info-modal-subtitle">На відділення Нової пошти</h4>
+											<p class="good-card-info-modal-text">Доставка заказов клиентам интернет-магазина
+												ALLEGRIA осуществляется по территории всей Украины курьерской службой "Нова пошта".
+											</p>
+										</div>
+									</div>
+									<button class="good-card-info-modal-buttons-return-and-exchange" id="returnAndExchange">Повернення та обмін</button>
+									<div class="modal-return-and-exchange">
+										<div class="good-card-info-modal-wrapper">
+											<button class="modal-cloce-btn modal-return-and-exchange-cloce-btn"><span></span></button>
+											<h3 class="good-card-info-modal-title">Повернення та обмін</h3>
+											<p class="good-card-info-modal-text">
+												Возврат товаров, приобретенных в интернет-магазине ALLEGRIA, происходит согласно Закону Украины «О защите прав потребителей».
+											</p>
+											<p class="good-card-info-modal-text">
+												Вы можете вернуть товар на протяжении 14 дней со дня покупки.
+											</p>
+											<h4 class="good-card-info-modal-subtitle">Як оформити заяву на повернення?
+											</h4>
+											<p class="good-card-info-modal-text">
+												Если купленная вещь Вам не понравилась или не подошла — свяжитесь с нашим контакт центром по телефону 000 00 000 и мы поможем оформить заявку на возврат.
+											</p>
+											<h4 class="good-card-info-modal-subtitle">Які умови поверння товару?</h4>
+											<p class="good-card-info-modal-text">Обмен и возврат товара производится в том случае, если указанный товар не был в употреблении, полностью сохранен его товарный вид — без повреждений и следов ношения, оригинальная упаковка, а также бирки, пломбы, ярлыки, фирменные знаки.
+
+												Вы можете осуществить возврат товар непосредственно в наших розничных магазинах, расположенных в Киеве, Харькове, Днепре и Одессе. Для жителей других городов Украины пересылка товара перевозчиком Новой Почтой или любым другим, на склад интернет магазина ALLEGRIA, расположенного в городе Харькове, осуществляется за счет компании.
+											</p>
+											<p class="good-card-info-modal-text">
+												Не возвращаются и не подлежат обмену купальники, нижнее белье, чулочно-носочные изделия, предметы личной гигиены, перчатки.
+											</p>
+											<p class="good-card-info-modal-text">
+												Вы можете осуществить возврат товар непосредственно в наших розничных магазинах, расположенных в Киеве, Харькове, Днепре и Одессе. Для жителей других городов Украины пересылка товара перевозчиком Новой Почтой или любым другим, на склад интернет магазина ALLEGRIA, расположенного в городе Харькове, осуществляется за счет компании.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="good-card-info-good-text">
+									<p class="good-card-info-text-title">Інформація про товар</p>
+									<p class="good-card-info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="similar-goods">
+						<h2 class="similar-goods-title">Схожі товари</h2>
+						<div class="similar-goods-slider">
+							<div class="similar-goods-item-wrapper">
+								<div class="similar-goods-slider-item">
+									<div class="similar-goods-item-img">
+										<a href="good-card.html"><img src="img/popular/popular-img-1.jpg" alt="image"></a>
+									</div>
+									<div class="similar-goods-item-title"><a href="good-card.html">REPlay</a></div>
+									<div class="similar-goods-slider-item-text">Classic shoes</div>
+									<div class="similar-goods-slider-item-price">
+										<div class="main-price">6100 UAH</div>
+										<div class="sale-price">3800 UAH</div>
+									</div>
+								</div>
+							</div>
+							<div class="similar-goods-item-wrapper">
+								<div class="similar-goods-slider-item">
+									<div class="similar-goods-item-img">
+										<a href="good-card.html"><img src="img/popular/popular-img-1.jpg" alt="image"></a>
+									</div>
+									<div class="similar-goods-item-title"><a href="good-card.html">REPlay</a></div>
+									<div class="similar-goods-slider-item-text">Classic shoes</div>
+									<div class="similar-goods-slider-item-price">
+										<div class="main-price">6100 UAH</div>
+										<div class="sale-price">3800 UAH</div>
+									</div>
+								</div>
+							</div>
+							<div class="similar-goods-item-wrapper">
+								<div class="similar-goods-slider-item">
+									<div class="similar-goods-item-img">
+										<a href="good-card.html"><img src="img/popular/popular-img-1.jpg" alt="image"></a>
+									</div>
+									<div class="similar-goods-item-title"><a href="good-card.html">REPlay</a></div>
+									<div class="similar-goods-slider-item-text">Classic shoes</div>
+									<div class="similar-goods-slider-item-price">
+										<div class="main-price">6100 UAH</div>
+										<div class="sale-price">3800 UAH</div>
+									</div>
+								</div>
+							</div>
+							<div class="similar-goods-item-wrapper">
+								<div class="similar-goods-slider-item">
+									<div class="similar-goods-item-img">
+										<a href="good-card.html"><img src="img/popular/popular-img-1.jpg" alt="image"></a>
+									</div>
+									<div class="similar-goods-item-title"><a href="good-card.html">REPlay</a></div>
+									<div class="similar-goods-slider-item-text">Classic shoes</div>
+									<div class="similar-goods-slider-item-price">
+										<div class="main-price">6100 UAH</div>
+										<div class="sale-price">3800 UAH</div>
+									</div>
+								</div>
+							</div>
+							<div class="similar-goods-item-wrapper">
+								<div class="similar-goods-slider-item">
+									<div class="similar-goods-item-img">
+										<a href="good-card.html"><img src="img/popular/popular-img-1.jpg" alt="image"></a>
+									</div>
+									<div class="similar-goods-item-title"><a href="good-card.html">REPlay</a></div>
+									<div class="similar-goods-slider-item-text">Classic shoes</div>
+									<div class="similar-goods-slider-item-price">
+										<div class="main-price">6100 UAH</div>
+										<div class="sale-price">3800 UAH</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</main>
+		</div>
+		@@include("../src/footer.html")
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+	<script src="./js/app.js"></script>
+</body>
+
+</html>
